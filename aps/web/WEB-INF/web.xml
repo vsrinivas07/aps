@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>aps</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>loginController</display-name>
+    <servlet-name>loginController</servlet-name>
+    <servlet-class>com.apceps.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginController</servlet-name>
+    <url-pattern>/loginController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>adminController</display-name>
+    <servlet-name>adminController</servlet-name>
+    <servlet-class>com.apceps.controller.AdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminController</servlet-name>
+    <url-pattern>/adminController</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+    <description></description>
+    <display-name>productController</display-name>
+    <servlet-name>productController</servlet-name>
+    <servlet-class>com.apceps.controller.ProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productController</servlet-name>
+    <url-pattern>/productController</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>orderController</display-name>
+    <servlet-name>orderController</servlet-name>
+    <servlet-class>com.apceps.controller.OrderController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderController</servlet-name>
+    <url-pattern>/orderController</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <!-- 
+  <filter>
+    <display-name>sessionValidationFilter</display-name>
+    <filter-name>sessionValidationFilter</filter-name>
+    <filter-class>com.apceps.filter.SessionValidationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>sessionValidationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+   --> 
+</web-app>
